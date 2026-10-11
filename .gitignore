@@ -1,0 +1,22 @@
+# Dependencies & build output
+node_modules/
+dist/
+release/
+src-tauri/target/
+src-tauri/gen/
+
+# Bundled FFmpeg binaries are downloaded by `npm run fetch-ffmpeg`
+src-tauri/resources/ffmpeg/*
+!src-tauri/resources/ffmpeg/README.md
+
+# Editor / OS noise
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local project files
+*.nee

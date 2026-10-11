@@ -1,0 +1,41 @@
+{
+  "name": "noencodeedit",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Lightweight, fast lossless video trimmer and audio-track editor for Windows (FFmpeg stream copy).",
+  "license": "GPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "tauri": "tauri",
+    "app:dev": "tauri dev",
+    "app:build": "tauri build",
+    "release": "node scripts/fetch-ffmpeg.mjs && node scripts/release.mjs",
+    "fetch-ffmpeg": "node scripts/fetch-ffmpeg.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/nunito": "^5.3.0",
+    "@tauri-apps/api": "^2.12.2",
+    "@tauri-apps/plugin-dialog": "^2.8.1",
+    "lucide-react": "^1.55.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@tauri-apps/cli": "^2.12.1",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vadmonboss/noEncodeEdit.git"
+  }
+}
